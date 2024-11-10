@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  background: lightblue;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  place-self: center;
+  box-sizing: border-box;
+}
+
+body{
+  place-self: center;
+  padding: 40px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  place-self: center;
+  /* border-radius: 40px; */
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+}
+
+.app input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+}
+
+.app button{
+  padding: 15 px;
+  padding-left: 10px;
+  border-radius: 15px;
+}
+
+.app button:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  color: white;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #070707;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  color: white;
+}
+
+.weather-info h2{
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+}
+
+.weather-info p{
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 15px; /* Less padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  .app input,
+  .app button {
+    font-size: 14px; /* Smaller font size for inputs and buttons */
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px; /* Even smaller font size for very small screens */
+  }
+
+  .app {
+    padding: 10px; /* Minimal padding */
+  }
+}
